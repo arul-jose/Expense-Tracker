@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense</title>
+    <link rel="stylesheet" href="./expense.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>EXPENSE TRACKER</h2>
+        <div class="section-input">
+            <label for="select-date">Date :</label>
+            <input type="date" id="date-input">
+
+            <label for="select-time">Time :</label>
+            <input type="time" id="time-input">
+
+            <label for="select-category">Category :</label>
+            <select id="select-category-items">
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+                <option value="Rent">Rent</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Medical">Medical</option>
+            </select>
+
+            <label for="select-amount">Amount :</label>
+            <input type="number" id="expense-amount" placeholder="Amount" required />
+
+            <button id="add">Add</button>
+        </div>
+        <div class="expense-table">
+            <h3>Daily Expenses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <div class="total-amount">
+                                <strong>Total:</strong> <span id="total-amount">0</span>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="./expense.js"></script>
+</body>
+
+</html>
